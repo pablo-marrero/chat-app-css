@@ -1,0 +1,288 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+ }
+ 
+ body{background-color: #f0f0f0;}
+ 
+ main{width: 100%;
+      margin: auto;
+      background-color: #fafafa;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+     }
+
+
+/******** Comienza el primer section *********/
+section:first-child{width: 45%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+                    position: relative;
+                   }
+
+
+#dibujoFondo{width: 80%;
+             height:100%;
+             background-image: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+             border-bottom-left-radius: 55%;
+             border-bottom-right-radius: 55%;
+             position: absolute;
+             left: -25%;
+            }
+
+#celular{width: 20vw;
+         height: auto;
+         background-color: white;
+         border-radius: 15px;
+         padding: 1%;
+         z-index: 50;
+         position: relative;
+         margin-right: 10%;
+         box-shadow: 10px 0px 80px rgb(184, 180, 180);
+         animation-name: celular;
+         animation-duration: 1s;
+         animation-timing-function: linear;            
+        }
+
+#celular>div{
+          width: 60%;
+          height: 15px;
+          border-radius: 25px;
+          z-index: 80;
+          position: absolute;
+          top: 0;
+          left: 20%;
+          right: 25%;
+          background-color: white;
+         }
+
+#celular> header{height: 12%;
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 background-image: linear-gradient(to left,hsl(293, 100%, 63%)25%,hsl(264, 100%, 61%));
+                 border-bottom-right-radius: 5px;
+                 border-bottom-left-radius: 5px;
+                 border-top-left-radius: 20px;
+                 border-top-right-radius: 20px;
+                 margin-top: 1%;
+                 padding-top: 5%;
+                 font-size: 10px;
+                 color: white;
+                }
+
+#celular>header>span{width: 8px;
+                     height: 8px;
+                     margin:0% 3%;
+                     background-color: transparent;
+                     border-top: 2px solid white;
+                     border-left: 2px solid white;
+                     transform: rotate(-45deg);
+                    }
+
+#celular>header h4{color: hsl(206, 6%, 79%);
+                   line-height: 16px;
+                   font-size: 10px;  
+                  }
+
+#celular>header>figure{margin-right: 2%;}
+
+#celular>header>figure>img{width: 25px;
+                            border-radius: 50%;
+                            border: 1px solid white;
+                           }
+             
+#celular>section{background-color: hsl(270, 20%, 96%);
+                 padding-top: 5%;
+                 padding-left: 5%;
+                 display: flex;
+                 flex-direction: column;
+                 position: relative;
+                }
+
+#celular>section p{font-size: 9px;
+                   display: inline;
+                   width: auto;
+                   max-width: 60%;
+                   padding: 3% 3% 4% 2%;
+                   margin-bottom: 4%;
+                   font-weight: 100;
+                   border-radius: 5px;
+                   color: hsl(276, 55%, 52%);
+                   background-color: #ede5f4;
+                  }
+
+#celular>section>picture{position: relative;
+                         left: 35%;
+                        }
+
+#celular picture>img{width: 35px;
+                     border-radius: 8px;
+                     margin-left: 1%;
+                    }
+
+#celular .chat-yo{color:hsl(271, 15%, 43%);
+                  background-color: white;
+                  max-width: 50%;
+                  position: relative;
+                  left: 45%;
+                  box-shadow: 0px 2px 3px 1px;
+                 }
+
+
+#celular div{margin-bottom: 2%;
+            }
+
+#celular div label{width: 60%;
+                   /* display: block; */
+                   padding: 4% 3% 4% 2%;
+                   border-radius: 5px;
+                   color: white;
+                   font-size: .5em;
+                   font-weight: 100;
+                   display: flex;
+                   justify-content: space-around;
+                   background-image: linear-gradient(to left,hsl(293, 100%, 63%)25%,hsl(264, 100%, 61%));;
+                  }
+
+#celular>footer{height: 10%;
+                background-color: hsl(270, 20%, 96%);
+                width: 100%;
+                margin-top: 5%;
+                padding: 0% 1% 1% 5%; 
+                display: flex;
+                justify-content: space-evenly;
+               }
+
+#celular>footer>label{width: 100%;}
+
+#celular>footer>label>input[type=text]{line-height: 25px;
+                                       width: 85%;
+                                       padding-left: 8%;
+                                       font-size: 10px;
+                                       border-radius: 15px;
+                                       border-style: none;
+                                      }
+
+#celular>footer>label>input[type=button]{width: 20px;
+                                         height: 20px;
+                                         border-radius: 50%;
+                                         background-color: hsl(271, 36%, 24%);
+                                         color:white;
+                                         border-style: none;
+                                        }
+/******** Comienza el segundo section *********/
+section:last-child{width: 55%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   font-family: 'Rubik', sans-serif;
+                   font-weight: 600;
+                   color: hsl(271, 36%, 24%)
+                  }
+
+section:last-child p{width: 56%;
+                     margin-top: 3%;
+                     color:hsl(270, 7%, 64%);
+                     font-weight: 400;
+                     font-size: 14px;
+                     line-height: 20px;
+                     animation-name: aparicion;
+                     animation-duration: .5s;
+                     animation-timing-function: linear;
+                    }
+
+
+
+/***********************************     ANIMACIONES      **************************************************/
+@keyframes aparicion{
+     from{margin-top: 100%;}
+}
+
+@keyframes celular{
+     from{left: -100%;}
+}
+
+/*****************************    VERSION DE MAS GRANDE QUE CELU XD    ********************************/
+
+@media(max-width: 980px){
+     section:first-child{
+          width: 55%;
+     }
+
+     #celular{width: 30vw;
+          animation: none;
+         }
+}
+
+@media(max-width: 650px){
+     main{width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+          height: 100vh;
+          display: flex;
+          flex-wrap: wrap;
+          overflow: scroll;
+         }
+          
+         section:first-child{width: 100%;
+          position: relative;
+         }
+
+         #celular{
+               width: 40%;
+               margin: auto;
+          }
+
+         section:last-child{width: 100%;
+          height: 50vh;
+          text-align: center;
+          margin: 7% 0;
+         }
+
+section:last-child p{text-align: center;
+            margin: auto;
+            margin-top: 2%;
+            animation:none
+           }
+}
+
+
+/*****************************    VERSION DE CELULAR      ********************************/
+
+@media(max-width: 492px){
+
+     main{width: 100%;
+          margin: auto;
+          background-color: #fafafa;
+          height: 100vh;
+          display: flex;
+          flex-wrap: wrap;
+          overflow: scroll;
+         }
+
+     section:first-child{width: 100%;
+                         height: 100vh;
+                         position: relative;
+                        }
+
+     #celular{width: 60%;
+              animation: none;
+             }
+
+     section:last-child{width: 100%;
+                        height: 50vh;
+                        text-align: center;
+                        margin: 7% 0;
+                       }
+
+     section:last-child p{text-align: center;
+                          margin: auto;
+                          margin-top: 2%;
+                          animation:none
+                         }
+}
