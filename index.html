@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
+    <main>
+        <section>
+            <!-- div para el dibujo de fondo -->
+            <div id="dibujoFondo"></div>
 
-  Samuel Green
-  Available to Walk
+            <!-- div dibujo celular -->
+            <div id="celular">
+                <!-- Span para dibujo blanco de arriba -->
+                <div></div>
+                
+                <header>
+                    <span></span> <!-- Span para dibujo de flechita -->
+                    <picture>
+                        <img src="./images/avatar.jpg" alt="perfil-imagen">
+                    </picture>    
+                    <div>
+                        <h1>Samuel Green</h1>
+                        <h4>Available to Walk</h4>
+                    </div>
+                </header>
 
-  That sounds great. I’d be happy with that.
+                <section>
+                    <p class="chat-el">That sounds great. I’d be happy with that.</p>
+                    <p class="chat-el">Could you send over some pictures of your dog, please? </p>
 
-  Could you send over some pictures of your dog, please?
+                    <picture>
+                        <img src="./images/dog-image-1.jpg" alt="img-enviada1">
+                        <img src="./images/dog-image-2.jpg" alt="img-enviada2">
+                        <img src="./images/dog-image-3.jpg" alt="img-enviada3">
+                    </picture>
 
-  Here are a few pictures. She’s a happy girl!
+                    <p class="chat-yo">Here are a few pictures. She’s a happy girl!</p>
+                    <p class="chat-yo">Can you make it?</p>
+                    
+                    <p class="chat-el">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
 
-  Can you make it?
+                    <div>
+                        <label for="">30 minute walk <span>$29</span></label>
+                    </div>
+                    
+                    <div>
+                        <label for="">1 hour walk <span>$49</span></label>
+                    </div>
+                </section>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+                <footer>
+                    <label for="">
+                        <input type="text" placeholder="Type a message…">
+                        <input type="button" value=">">
+                    </label>
+                </footer>
+            </div>
+            
+        </section>
 
-  30 minute walk
-  $29
 
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <section>
+            <h1>Simple booking</h1>
+            <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. 
+                Once the walk has been completed you can rate your walker and book again all through the chat</p>
+            <div></div>
+        </section>
+    </main>
 </body>
 </html>
